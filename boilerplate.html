@@ -16,14 +16,14 @@
     <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
     <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
     <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
-    <link rel="stylesheet" media="screen" href="themes/locals.css">
-
     <!-- Style theme. More available in /themes/style/ or create your own. -->
     <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
 
     <!-- Transition theme. More available in /themes/transition/ or create your own. -->
     <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
 
+    <!--    custom stuff-->
+    <link rel="stylesheet" media="screen" href="themes/locals.css">
     <!-- Basic black and white print styles -->
     <link rel="stylesheet" media="print" href="core/print.css">
 
@@ -68,17 +68,22 @@
         </ul>
     </section>
 
-    <section class="slide clearfix">
+    <section class="slide">
         <h2>Visual Studio</h2>
-        <div style="float: left; width: 75%">
-            <p>Support is provided by the Task Runner Explorer</p>
-        </div>
-        <div style="float: left; width: 25%">
+        <ul>
+            <li>Support is provided by the Task Runner Explorer.</li>
+            <li>Tasks can be bound by IDE events or Manually invoked.</li>
+        </ul>
+        <div style="margin-left: 30px;">
+            <figure>
+                <a href="/images/task-runner-menu.PNG" target="_blank">
+                    <img src="/images/task-runner-menu.PNG">
+                </a>
+                <figcaption>Navigate to the Task Runner Explorer</figcaption>
+            </figure>
             <figure>
                 <img src="/images/task-runner.png">
-                <figcaption>
-                    Task Bindings in VS 2017
-                </figcaption>
+                <figcaption>Task Bindings in VS 2017</figcaption>
             </figure>
             <figure>
                 <img src="/images/task-run-by-command.png">
@@ -88,25 +93,91 @@
     </section>
 
     <section class="slide">
+        <h2>JetBrains' Rider</h2>
+        <ul>
+            <li>Support is provided by the IDE and can be tricky to locate.</li>
+            <li>Again, tasks can be bound by IDE events or Manually invoked.</li>
+        </ul>
+
+        <div style="margin-left: 30px; float: left; width: 45%;">
+            <h3>Bindings</h3>
+            <figure>
+                <a href="/images/rider-tasks.png" target="_blank">
+                    <img src="/images/rider-tasks.png" width="50%">
+                </a>
+                <figcaption>Bound to Solution Open</figcaption>
+            </figure>
+            <figure>
+                <a href="/images/rider-buildTask.PNG" target="_blank">
+                    <img src="/images/rider-buildTask.PNG" width="50%">
+                </a>
+                <figcaption>Bound to Project Build</figcaption>
+            </figure>
+        </div>
+        <div style="margin-left: 30px;">
+            <h3>Manual</h3>
+            <figure>
+                <a href="/images/rider-revealTasks.PNG" target="_blank">
+                    <img src="/images/rider-revealTasks.PNG" width="50%">
+                </a>
+                <figcaption>Open the Gulp Task Palette</figcaption>
+            </figure>
+            <figure>
+                <a href="/images/rider-taskPalette.PNG" target="_blank">
+                    <img src="/images/rider-taskPalette.PNG">
+                </a>
+                <figcaption>Click on a Task to run it.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide">
         <h2>How does it work?</h2>
         <div>
             <p>A gulpfile.js is written and added to the project. That file contains the series of tasks a developer
-                wants run.</p>
-            <p>Need a current screenie</p>
+                wants run and the criteria in which to run the task. All of this is performed by NodeJS behind the
+                scenes.</p>
             <ul>
-                <li>Concatenate a series of CSS files and add sourceMaps to them.</li>
-                <li>When a specific subset of files have saved changes</li>
+                <li>Concatenate a series of CSS files and add sourceMaps to them.
+                    <a href="images/css-task.PNG" target="_blank"><img class="align-left"
+                                                                       src="images/css-task.PNG"/></a>
+                </li>
+                <li>When a specific subset of files have saved changes, perform a series of tasks
+                    <a href="images/watchers.PNG" target="_blank"><img class="align-left"
+                                                                       src="images/watchers.PNG"/></a>
+                </li>
             </ul>
         </div>
     </section>
 
 
     <section class="slide">
-        <h2>What is Gulp</h2>
+        <h2>Why should we use it?</h2>
+        <ul>
+            <li>File Watching</li>
+            <li>Source Maps</li>
+            <li>Ability to Extend functionality without disrupting deployment process
+                <br>
+                EX: Next Steps are SASS for CSS and ESLint for JS code quality
+            </li>
+            <li>Cross Architecture Reliability</li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2>What is Gulp</h2>
+        <h2>How Can I learn more?</h2>
+        <ul>
+            <li>We are eager to teach to speed adoption. Please ask!</li>
+            <li>Online Resources:
+                <ul>
+                    <li>
+                        <a href="https://gulpjs.com/">Gulp Documentation</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <p></p>
+
     </section>
 
     <section class="slide">

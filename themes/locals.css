@@ -29,3 +29,21 @@ img{
     left: 0;
     font-size: 0.5rem;
 }
+figure{;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+img{
+    margin: 0;
+    max-height: 200px;
+    width: auto;
+}
+img.align-left{
+    margin: 0;
+}
+
+
+
+
