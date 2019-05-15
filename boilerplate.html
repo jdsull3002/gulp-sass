@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=1024, user-scalable=no">
+
+    <title>Your deck.js Presentation</title>
+
+    <!-- Required stylesheet -->
+    <link rel="stylesheet" media="screen" href="core/deck.core.css">
+
+    <!-- Extension CSS files go here. Remove or add as needed. -->
+    <link rel="stylesheet" media="screen" href="extensions/goto/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="extensions/menu/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="extensions/navigation/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="extensions/status/deck.status.css">
+    <link rel="stylesheet" media="screen" href="extensions/scale/deck.scale.css">
+    <link rel="stylesheet" media="screen" href="themes/locals.css">
+
+    <!-- Style theme. More available in /themes/style/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/style/swiss.css">
+
+    <!-- Transition theme. More available in /themes/transition/ or create your own. -->
+    <link rel="stylesheet" media="screen" href="themes/transition/horizontal-slide.css">
+
+    <!-- Basic black and white print styles -->
+    <link rel="stylesheet" media="print" href="core/print.css">
+
+    <!-- Required Modernizr file -->
+    <script src="modernizr.custom.js"></script>
+</head>
+<body>
+<div class="deck-container">
+    <!-- Begin slides. Just make elements with a class of slide. -->
+    <section class="slide clearfix">
+        <h1>How <span class="gulp_orange">Gulp</span> and <span class="sass_pink">SASS</span> Can Ease your Workload and
+            Save your world*</h1>
+        <div class="logo">
+            <img src="images/463px-Gulp.js_Logo.svg.png" alt="gulp logo">
+        </div>
+        <div class="logo">
+            <img src="images/sass-logo-new.png" alt="sass logo">
+        </div>
+        <p class="disclaimer">*Your mileage may vary. Hyperbole is not guarantee of future performance.</p>
+    </section>
+
+    <section class="slide">
+        <h1>1. Gulp</h1>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp?</h2>
+        <p>Gulp is a NodeJS tool which runs tasks on files on command or at specified intervals.</p>
+        <p>Those intervals can be:</p>
+        <ul>
+            <li>When invoked by the IDE Events such as Project Open or Build (aka Bindings)</li>
+            <li>When a specific subset of files have saved changes: Watch tasks</li>
+            <li>On command by interacting with the task</li>
+        </ul>
+        <br>
+        <p>What tools (IDEs) offer support?</p>
+        <ul>
+            <li>Visual Studio - Windows</li>
+            <li>JetBrains Rider - Universal</li>
+            <li>VS Code</li>
+            <li>Command Line (bash, power shell)</li>
+        </ul>
+    </section>
+
+    <section class="slide clearfix">
+        <h2>Visual Studio</h2>
+        <div style="float: left; width: 75%">
+            <p>Support is provided by the Task Runner Explorer</p>
+        </div>
+        <div style="float: left; width: 25%">
+            <figure>
+                <img src="/images/task-runner.png">
+                <figcaption>
+                    Task Bindings in VS 2017
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/images/task-run-by-command.png">
+                <figcaption>Manually Running a Task in VS 2017</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>How does it work?</h2>
+        <div>
+            <p>A gulpfile.js is written and added to the project. That file contains the series of tasks a developer
+                wants run.</p>
+            <p>Need a current screenie</p>
+            <ul>
+                <li>Concatenate a series of CSS files and add sourceMaps to them.</li>
+                <li>When a specific subset of files have saved changes</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <section class="slide">
+        <h2>What is Gulp</h2>
+    </section>
+
+    <!-- End slides. -->
+
+    <!-- Begin extension snippets. Add or remove as needed. -->
+
+    <!-- deck.navigation snippet -->
+    <div aria-role="navigation">
+        <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+        <a href="#" class="deck-next-link" title="Next">&#8594;</a>
+    </div>
+
+    <!-- deck.status snippet -->
+    <p class="deck-status" aria-role="status">
+        <span class="deck-status-current"></span>
+        /
+        <span class="deck-status-total"></span>
+    </p>
+
+    <!-- deck.goto snippet -->
+    <form action="." method="get" class="goto-form">
+        <label for="goto-slide">Go to slide:</label>
+        <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+        <datalist id="goto-datalist"></datalist>
+        <input type="submit" value="Go">
+    </form>
+
+    <!-- End extension snippets. -->
+</div>
+
+<!-- Required JS files. -->
+<script src="jquery.min.js"></script>
+<script src="core/deck.core.js"></script>
+
+<!-- Extension JS files. Add or remove as needed. -->
+<script src="extensions/menu/deck.menu.js"></script>
+<script src="extensions/goto/deck.goto.js"></script>
+<script src="extensions/status/deck.status.js"></script>
+<script src="extensions/navigation/deck.navigation.js"></script>
+<script src="extensions/scale/deck.scale.js"></script>
+
+<!-- Initialize the deck. You can put this in an external file if desired. -->
+<script>
+    $(function () {
+        $.deck('.slide');
+    });
+</script>
+</body>
+</html>
