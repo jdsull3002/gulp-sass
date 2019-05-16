@@ -63,7 +63,7 @@
         <ul>
             <li>Visual Studio - Windows</li>
             <li>JetBrains Rider - Universal</li>
-            <li>VS Code</li>
+            <li>VS Code - command line through terminal is more reliable.</li>
             <li>Command Line (bash, power shell)</li>
         </ul>
     </section>
@@ -92,7 +92,7 @@
         </div>
     </section>
 
-    <section class="slide">
+    <section class="slide clearfix">
         <h2>JetBrains' Rider</h2>
         <ul>
             <li>Support is provided by the IDE and can be tricky to locate.</li>
@@ -129,6 +129,47 @@
                 <figcaption>Click on a Task to run it.</figcaption>
             </figure>
         </div>
+    </section>
+
+    <section class="slide clearfix">
+        <h2>Command Line support</h2>
+        <h3>Tool support</h3>
+        <ul>
+            <li>Bash native or via GitBash</li>
+            <li>Powershell</li>
+        </ul>
+
+        <div class="clearfix">
+            <div style="margin-left: 30px; float: left; width: 45%;">
+                <h4>Bash (only have windows flavored captures)</h4>
+                <figure>
+                    <a href="/images/ubuntu-subsytem.PNG" target="_blank">
+                        <img src="/images/ubuntu-subsytem.PNG" width="50%">
+                    </a>
+                    <figcaption>Windows Ubuntu subsystem</figcaption>
+                </figure>
+                <figure>
+                    <a href="/images/command-line-bash.PNG" target="_blank">
+                        <img src="/images/command-line-bash.PNG" width="50%">
+                    </a>
+                    <figcaption>GitBash</figcaption>
+                </figure>
+            </div>
+            <div style="margin-left: 30px;">
+                <h4>Powershell</h4>
+                <figure>
+                    <a href="/images/command-line-ps.PNG" target="_blank">
+                        <img src="/images/command-line-ps.PNG" width="50%">
+                    </a>
+                    <figcaption>Using Powershell</figcaption>
+                </figure>
+            </div>
+        </div>
+        <h3>Caveats</h3>
+        <ul>
+            <li>You have to know which command you want to invoke.</li>
+            <li>No automagical task running locally. Deployment has a scritpt to run the `deployment` task as part of the roll-out process.</li>
+        </ul>
     </section>
 
     <section class="slide">
